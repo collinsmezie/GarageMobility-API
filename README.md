@@ -65,14 +65,14 @@ Send Requests from your favorite API clients like Postman and Thunderclient
   - `200 OK`: The post was found successfully. The response includes the post data.
 
     ```json
-  {
-    "_id": "66563a96cef6d2349dc67d88",
-    "title": "MongoDB First Post",
-    "author": "Jady J",
-    "content": "Server is running on port 10000 Connected to MongoDB Successfully",
-    "creation_Date": "23-01-2024 14:20:22",
-    "__v": 0
-  }
+    {
+      "_id": "66563a96cef6d2349dc67d88",
+      "title": "MongoDB First Post",
+      "author": "Jady J",
+      "content": "Server is running on port 10000 Connected to MongoDB Successfully",
+      "creation_Date": "23-01-2024 14:20:22",
+      "__v": 0
+    }
     ```
 
   - `404 Not Found`: The post with the specified ID was not found.
