@@ -7,7 +7,7 @@ This documentation outlines the usage of the Blog REST API. The API allows you t
 
 ## API Base URL
 
-The base URL for all API endpoints is https://talentsync-api.onrender.com
+The base URL for all API endpoints is https://garagemobility-api.onrender.com/
 Send Requests from your favorite API clients like Postman and Thunderclient
 
 ## Standard Formats for Requests and Responses
