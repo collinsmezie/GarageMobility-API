@@ -26,30 +26,33 @@ Send Requests from your favorite API clients like Postman and Thunderclient
   - `200 OK`: The list of posts was fetched successfully.
 
     ```json
-  {
+    {
   
-    {
-      "_id": "66563953cef6d2349dc67d82",
-      "title": "MySQL First Post",
-      "author": "femi J",
-      "content": "Server is running on port 10000 Connected to SQL server Successfully",
-      "__v": 0
-    },
-    {
-      "_id": "66563a96cef6d2349dc67d88",
-      "title": "MongoDB second Post",
-      "author": "Mary Janes",
-      "content": "Server is running on port 10000 Connected to MongoDB Successfully",
-      "__v": 0
-    },
-    {
-      "_id": "665640fc7035a9efe28f0ae6",
-      "title": "Garage Mobility",
-      "author": "Jerry Kumahlor",
-      "content": "useNewUrlParser is a deprecated option",
-      "__v": 0
+      {
+        "_id": "66563953cef6d2349dc67d82",
+        "title": "MySQL First Post",
+        "author": "femi J",
+        "content": "Server is running on port 10000 Connected to SQL server Successfully",
+        "creation_Date": "23-01-2024 14:23:22",
+        "__v": 0
+      },
+      {
+        "_id": "66563a96cef6d2349dc67d88",
+        "title": "MongoDB second Post",
+        "author": "Mary Janes",
+        "content": "Server is running on port 10000 Connected to MongoDB Successfully",
+        "creation_Date": "23-01-2024 14:24:22",
+        "__v": 0
+      },
+      {
+        "_id": "665640fc7035a9efe28f0ae6",
+        "title": "Garage Mobility",
+        "author": "Jerry Kumahlor",
+        "content": "useNewUrlParser is a deprecated option",
+        "creation_Date": "23-01-2024 14:26:22",
+        "__v": 0
+      }
     }
-  }
     ```
 
   - `500 Internal Server Error`: An error occurred while fetching the posts.
@@ -67,6 +70,7 @@ Send Requests from your favorite API clients like Postman and Thunderclient
     "title": "MongoDB First Post",
     "author": "Jady J",
     "content": "Server is running on port 10000 Connected to MongoDB Successfully",
+    "creation_Date": "23-01-2024 14:20:22",
     "__v": 0
   }
     ```
@@ -75,7 +79,7 @@ Send Requests from your favorite API clients like Postman and Thunderclient
 
     ```json
     {
-      "error": "Post not found"
+      "error": "No Post with that ID was found"
     }
     ```
 
@@ -90,20 +94,20 @@ Send Requests from your favorite API clients like Postman and Thunderclient
 ```json
     {
       "title": "Fantasy Grill",
-      "author": "Mira", 
+      "author": "Mirage", 
       "content": "Once upon a time... The end"
     }
 
 ```
 - **Responses:**
-  - `200 OK`: The post was created successfully. The response includes the newly created post data.
+  - `201 OK`: The post was created successfully. The response includes the newly created post data.
 
     ```json
     {
       "title": "Fantasy Grill",
-      "author": "Mira",
+      "author": "Mirage",
       "content": "Once upon a time... The end",
-      "created": "23-01-2024 14:20:22",
+      "creation_Date": "23-01-2024 14:20:22",
       "_id": "65afbd163b93aa94cd67cadc"
     }
     ```
@@ -116,7 +120,7 @@ Send Requests from your favorite API clients like Postman and Thunderclient
 - **Request Body:** The updated post fields.
 ```json
 {
-  "author": "Mira Sonya"
+  "author": "Mirage Sonya"
 }
 
 ```
@@ -127,9 +131,9 @@ Send Requests from your favorite API clients like Postman and Thunderclient
     {
       "_id": "65afbd163b93aa94cd67cadc",
       "title": "Fantasy Grill",
-      "author": "Mira Sonya",
+      "author": "Mirage Sonya",
       "content": "Once upon a time... The end",
-      "created": "23-01-2024 14:20:22",
+      "creation_Date": "23-01-2024 14:20:22",
       "__v": 0
     }
     ```

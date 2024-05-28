@@ -28,14 +28,15 @@ async function getPostById(req, res) {
 // Create a Post 
 async function createPost(req, res) {
     try {
-        const { title, author, content, created, updated } = req.body;
+        const { title, author, content, created } = req.body;
         const currentDate = created || moment().format('DD-MM-YYYY HH:mm:ss');
 
         const post = new Post({
             title,
             author,
             content,
-            created: currentDate,        });
+            creation_Date: currentDate, 
+       });
         if (!post) {
             return res.status(400).json({ error: 'Bad request: check post format' });
         }
