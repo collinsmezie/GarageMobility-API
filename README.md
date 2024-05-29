@@ -58,7 +58,7 @@ Send Requests from your favorite API clients like Postman and Thunderclient
   - `500 Internal Server Error`: An error occurred while fetching the posts.
 
 
-  ### 4. Get Post by ID
+  ### 2. Get Post by ID
 
 - **Endpoint:** `GET /api/posts/:postId/one`
 - **Responses:**
@@ -87,7 +87,7 @@ Send Requests from your favorite API clients like Postman and Thunderclient
 
 
 
- ### 5. Create New Post
+ ### 3. Create New Post
 
 - **Endpoint:** `POST /api/posts/create`
 - **Request Body:** The post data 
@@ -114,7 +114,7 @@ Send Requests from your favorite API clients like Postman and Thunderclient
   - `500 Internal Server Error`: An error occurred while creating the Post.
 
 
-### 6. Update Post by ID
+### 4. Update Post by ID
 
 - **Endpoint:** `PUT /api/posts/:postId/update`
 - **Request Body:** The updated post fields.
@@ -149,7 +149,7 @@ Send Requests from your favorite API clients like Postman and Thunderclient
     ```
   - `500 Internal Server Error`: An error occurred while updating the Post.
 
-### 7. Delete Post by ID
+### 5. Delete Post by ID
 
 - **Endpoint:** `DELETE /api/posts/:postId/delete`
 - **Responses:**
